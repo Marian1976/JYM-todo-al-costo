@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYJ Todo-al-costo | Productos Masivos al Mejor Precio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8fafc;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-900">MYJ <span class="text-orange-500">todo-al-costo</span></div>
+            <div>
+                <a href="#carrito" class="px-6 py-2 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition duration-300 pulse-animation">
+                    Ver Carrito (24/7)
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Productos Masivos <br><span class="text-orange-300">Directo de Fábrica</span></h1>
+                <p class="text-xl mb-8">Hasta 70% menos que en tiendas tradicionales. Sin intermediarios, solo precios justos.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#carrito" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-full text-lg text-center transition duration-300 transform hover:scale-105">
+                        Comprar Ahora
+                    </a>
+                    <a href="#como-funciona" class="bg-white hover:bg-gray-100 text-blue-900 font-bold py-4 px-8 rounded-full text-lg text-center transition duration-300">
+                        Cómo funciona
+                    </a>
+                </div>
+                <div class="mt-8 flex items-center">
+                    <div class="flex -space-x-2 mr-4">
+                        <img src="https://placehold.co/40" alt="Avatar de cliente satisfecho sonriendo" class="w-10 h-10 rounded-full border-2 border-white">
+                        <img src="https://placehold.co/40" alt="Avatar de cliente satisfecho mirando a la cámara" class="w-10 h-10 rounded-full border-2 border-white">
+                        <img src="https://placehold.co/40" alt="Avatar de cliente satisfecho con lentes" class="w-10 h-10 rounded-full border-2 border-white">
+                    </div>
+                    <p>+5,000 compradores satisfechos este mes</p>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <<img src="image/z.jpg" alt="Almacén industrial lleno de productos organizados en estantes con empleados trabajando" class="rounded-lg shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="como-funciona" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-16">¿Por qué comprar con nosotros?</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Precios de Fábrica</h3>
+                    <p class="text-gray-600">Compramos directamente a productores eliminando costos de intermediarios.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-orange-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Garantía de Calidad</h3>
+                    <p class="text-gray-600">Todos nuestros productos pasan estrictos controles antes de llegar a tus manos.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Entrega Rápida</h3>
+                    <p class="text-gray-600">Despachamos dentro de 24 horas hábiles con seguimiento en tiempo real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-16">Productos Destacados</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative pb-48 overflow-hidden">
+                        <img class="absolute inset-0 h-full w-full object-cover" src="https://placehold.co/600" alt="Pack de 12 jabones líquidos marca blanca en envases transparentes">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Jabón Líquido x12</h3>
+                        <div class="mt-2">
+                            <span class="text-orange-500 font-bold text-xl">$8.99</span>
+                            <span class="text-sm text-gray-600 line-through ml-2">$14.99</span>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#carrito" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm font-medium transition duration-300 inline-block">
+                                Agregar al Carrito
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative pb-48 overflow-hidden">
+                        <img class="absolute inset-0 h-full w-full object-cover" src="https://placehold.co/600" alt="Paquete de 24 rollos de papel higiénico premium doble hoja">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Papel Higiénico x24</h3>
+                        <div class="mt-2">
+                            <span class="text-orange-500 font-bold text-xl">$12.99</span>
+                            <span class="text-sm text-gray-600 line-through ml-2">$19.99</span>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#carrito" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm font-medium transition duration-300 inline-block">
+                                Agregar al Carrito
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative pb-48 overflow-hidden">
+                        <img class="absolute inset-0 h-full w-full object-cover" src="https://placehold.co/600" alt="Caja de 50 unidades de mascarillas desechables tipo quirúrgico">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Mascarillas x50</h3>
+                        <div class="mt-2">
+                            <span class="text-orange-500 font-bold text-xl">$5.49</span>
+                            <span class="text-sm text-gray-600 line-through ml-2">$9.99</span>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#carrito" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm font-medium transition duration-300 inline-block">
+                                Agregar al Carrito
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative pb-48 overflow-hidden">
+                        <img class="absolute inset-0 h-full w-full object-cover" src="https://placehold.co/600" alt="Botella de 5 litros de desinfectante multiusos concentrado">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Desinfectante 5L</h3>
+                        <div class="mt-2">
+                            <span class="text-orange-500 font-bold text-xl">$15.99</span>
+                            <span class="text-sm text-gray-600 line-through ml-2">$24.99</span>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#carrito" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm font-medium transition duration-300 inline-block">
+                                Agregar al Carrito
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#carrito" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full text-lg inline-block transition duration-300 transform hover:scale-105 pulse-animation">
+                    Ver Todos los Productos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-16">Lo que dicen nuestros clientes</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60" alt="Retrato de María Gómez, clienta satisfecha sonriendo" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">María Gómez</h4>
+                            <div class="flex text-orange-400">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"He ahorrado más de $200 este mes comprando aquí. Los productos son igual de buenos que en el supermercado pero a mitad de precio. ¡Increíble!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60" alt="Retrato de Carlos Rodríguez, cliente satisfecho mirando a la cámara" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Carlos Rodríguez</h4>
+                            <div class="flex text-orange-400">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Para mi negocio era esencial encontrar proveedores con precios bajos. MYJ me ha ayudado a reducir costos sin sacrificar calidad."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60" alt="Retrato de Laura Sánchez, clienta satisfecha con teléfono en mano" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Laura Sánchez</h4>
+                            <div class="flex text-orange-400">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"La entrega fue super rápida y todo llegó perfectamente empacado. Ahora compro todo para mi hogar aquí, es demasiado conveniente."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="carrito" class="py-20 hero-gradient text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listo para comprar al costo real?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Únete a miles de clientes inteligentes que ya están ahorrando en sus compras masivas.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="TU_URL_DEL_CARRITO_AQUI" class="bg-white hover:bg-gray-100 text-blue-900 font-bold py-4 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">
+                    Visitar Carrito de Compras
+                </a>
+                <a href="#productos" class="bg-transparent hover:bg-blue-800 text-white font-bold py-4 px-8 rounded-full text-lg border-2 border-white transition duration-300">
+                    Explorar Más Productos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">MYJ todo-al-costo</h3>
+                    <p class="text-gray-400">Productos masivos directamente de fábrica al mejor precio del mercado.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Información</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Sobre nosotros</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Términos y condiciones</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Política de privacidad</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">info@myjtodoalcosto.com</li>
+                        <li class="text-gray-400">+1 (800) 123-4567</li>
+                        <li class="text-gray-400">Lun-Vie: 9AM - 6PM</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Métodos de Pago</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <div class="bg-gray-800 p-2 rounded">
+                            <img src="https://placehold.co/30" alt="Logo de Visa" class="h-6">
+                        </div>
+                        <div class="bg-gray-800 p-2 rounded">
+                            <img src="https://placehold.co/30" alt="Logo de Mastercard" class="h-6">
+                        </div>
+                        <div class="bg-gray-800 p-2 rounded">
+                            <img src="https://placehold.co/30" alt="Logo de PayPal" class="h-6">
+                        </div>
+                        <div class="bg-gray-800 p-2 rounded">
+                            <img src="https://placehold.co/30" alt="Logo de American Express" class="h-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 MYJ todo-al-costo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
